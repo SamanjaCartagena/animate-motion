@@ -6,9 +6,9 @@ function App() {
  
   return (
     <>
-    <motion.div initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 2}}>
-      <h1>Hello World</h1>
-    </motion.div>
+    <motion.button whileHover={{scale:3, cursor:"pointer"}}
+    whileTap={{scale:0.5, backgroundColor:"red", borderRadius:"100%"}}
+    >Get Started</motion.button>
   
     </>
   )
