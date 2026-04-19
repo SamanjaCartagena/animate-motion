@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import { motion } from 'motion/react'
 import './App.css'
-
+import AnimatedButton from './AnimatedButton'
+import { FeaturesList } from './FeaturesList'
 function App() {
  
   return (
     <>
-    <motion.button whileHover={{scale:3, cursor:"pointer"}}
-    whileTap={{scale:0.5, backgroundColor:"red", borderRadius:"100%"}}
-    transition={{type:"spring", stiffness:400, damping:10}}
-    >Get Started</motion.button>
-  
+    <AnimatedButton>Click Me</AnimatedButton>
+    <FeaturesList />
+    <AnimatedButton damping={0}>Fuck me</AnimatedButton>
     </>
   )
 }
 
 export default App
+ 
